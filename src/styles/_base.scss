@@ -1,0 +1,85 @@
+body {
+  align-items: center;
+  background-color: #fff;
+  color: $grey-dark;
+  display: flex;
+  justify-content: center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  height: 100vh;
+  margin: 30px;
+}
+
+h1 {
+  font-size: 34px;
+  font-weight: 500;
+  margin: 35px 0 15px;
+
+  @media (min-width: 600px) {
+    font-size: 40px;
+  }
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+
+  label {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 7px;
+  }
+
+  input {
+    border: 1px solid $grey-border;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: 300;
+    height: 50px;
+    padding-left: 20px;
+
+    &:focus {
+      outline: none;
+    }
+  }
+}
+
+.checkbox-container {
+  align-items: center;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  margin-bottom: 60px;
+
+  label {
+    font-size: 14px;
+  }
+
+  input[type="checkbox"] {
+    margin: 0 10px 0 0;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+button {
+  border: 1px solid $grey-border;
+  border-radius: 8px;
+  color: $grey-dark;
+  font-size: 20px;
+  height: 60px;
+  letter-spacing: 1px;
+  padding: 0 50px;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &:focus {
+    outline: none;
+  }
+}

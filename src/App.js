@@ -1,5 +1,5 @@
 import React from 'react';
-import './styles.scss';
+import './styles/styles.scss';
 import logo from './green-logo.svg';
 
 function App() {
@@ -10,10 +10,14 @@ function App() {
         <h1>Example login screen</h1>
         <p>Getting started with Green</p>
         <div className="input-container">
-          <label>Email Address</label>
+          <label for="email">Email Address</label>
           <input
+            class=""
             type="email"
-            placeholder="email"
+            id="email"
+            pattern=".+@globex.com"
+            size="30"
+            required
           />
         </div>
         <div className="checkbox-container">
