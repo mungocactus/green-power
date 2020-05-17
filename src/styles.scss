@@ -1,4 +1,28 @@
 body {
+  align-items: center;
   background-color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 22px;
+  height: 100vh;
   margin: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+h1 {
+  color: #555;
+  font-size: 40px;
+  font-weight: 500;
+}
+
+.login {
+  border: 1px solid #fafafa;
+  box-shadow: 0 6px 16px 0 rgba(0,0,0,.05), 0 3px 6px 0 rgba(0,0,0,.01);
+  max-width: 650px;
+  padding: 50px;
+  width: 100%;
+
+  img {
+    width: 160px;
+  }
 }
