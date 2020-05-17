@@ -14,7 +14,7 @@ body {
 h1 {
   font-size: 34px;
   font-weight: 500;
-  margin: 35px 0 15px;
+  margin: 50px 0 15px;
 
   @media (min-width: 600px) {
     font-size: 40px;
@@ -58,28 +58,60 @@ h1 {
   }
 
   input[type="checkbox"] {
+    -webkit-appearance:none;
+    border-radius: 5px;
+    border:1px solid $grey-border;
+    height: 25px;
     margin: 0 10px 0 0;
+    padding: 6px;
+    width: 25px;
 
     &:hover {
       cursor: pointer;
+    }
+
+    &:checked {
+      background-color: $green;
+      border: 0;
+      color: #fff;
+      font-family: 'FontAwesome';
+      font-size: 13px;
+
+      &:after {
+        content: '\f00c';
+      }
+    }
+
+    &:focus {
+      outline: none;
     }
   }
 }
 
 button {
-  border: 1px solid $grey-border;
+  background-color: $green;
+  border: 0;
   border-radius: 8px;
-  color: $grey-dark;
+  color: #fff;
   font-size: 20px;
   height: 60px;
   letter-spacing: 1px;
   padding: 0 50px;
 
   &:hover {
+    background-color: $green;
+    border: 0;
+    color: #fff;
     cursor: pointer;
   }
 
   &:focus {
     outline: none;
+  }
+
+  &:disabled {
+    background-color: #fff;
+    border: 1px solid $grey-border;
+    color: $grey-dark;
   }
 }
