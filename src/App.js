@@ -10,8 +10,8 @@ class App extends React.Component {
 
   emailInput = React.createRef();
 
-  validateForm(event) {
-    event.preventDefault();
+  validateForm(e) {
+    e.preventDefault();
     const emailInput = this.emailInput.current.value;
     const emailRegex = /^\w+[\w-\.]*\@\w+((-\w+)|(\w*))\.[a-z]{2,3}$/;
     const signInBtn = document.querySelector('#signin');
